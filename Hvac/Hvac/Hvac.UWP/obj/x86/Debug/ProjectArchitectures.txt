@@ -1,0 +1,1 @@
+C:\Projects\Hvac\Hvac\Hvac\Hvac.UWP\Hvac.UWP.csproj;x86

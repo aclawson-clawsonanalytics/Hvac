@@ -25,6 +25,10 @@ namespace Hvac.Views
             ListView = MenuItemsListView;
         }
 
+        public void OnMenuItemSelected(object sender, EventArgs e)
+        {
+
+        }
         class HomeMasterDetailPageMasterViewModel : INotifyPropertyChanged
         {
             public ObservableCollection<HomeMasterDetailPageMenuItem> MenuItems { get; set; }
@@ -33,11 +37,10 @@ namespace Hvac.Views
             {
                 MenuItems = new ObservableCollection<HomeMasterDetailPageMenuItem>(new[]
                 {
-                    new HomeMasterDetailPageMenuItem { Id = 0, Title = "Page 1" },
-                    new HomeMasterDetailPageMenuItem { Id = 1, Title = "Page 2" },
-                    new HomeMasterDetailPageMenuItem { Id = 2, Title = "Page 3" },
-                    new HomeMasterDetailPageMenuItem { Id = 3, Title = "Page 4" },
-                    new HomeMasterDetailPageMenuItem { Id = 4, Title = "Page 5" },
+                    new HomeMasterDetailPageMenuItem { Id = 0, Title = "Service Locations" },
+                    new HomeMasterDetailPageMenuItem { Id = 1, Title = "Service Records" },
+                    new HomeMasterDetailPageMenuItem { Id = 2, Title = "Reference Documents" },
+                    new HomeMasterDetailPageMenuItem { Id = 3, Title = "Calculations" },                    
                 });
             }
             

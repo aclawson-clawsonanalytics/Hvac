@@ -4,9 +4,13 @@
              x:Class="Hvac.Views.LoginPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Welcome to Hvac.IO!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Username"/>
+            <Entry Placeholder="Password"/>
+
+            <Button Text="Login" Clicked="LoginClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

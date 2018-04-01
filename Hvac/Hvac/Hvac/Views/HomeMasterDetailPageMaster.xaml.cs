@@ -36,11 +36,10 @@ namespace Hvac.Views
             public HomeMasterDetailPageMasterViewModel()
             {
                 MenuItems = new ObservableCollection<HomeMasterDetailPageMenuItem>(new[]
-                {
-                    new HomeMasterDetailPageMenuItem { Id = 0, Title = "Service Locations" },
-                    new HomeMasterDetailPageMenuItem { Id = 1, Title = "Service Records" },
-                    new HomeMasterDetailPageMenuItem { Id = 2, Title = "Reference Documents" },
-                    new HomeMasterDetailPageMenuItem { Id = 3, Title = "Calculations" },                    
+                {                    
+                    new HomeMasterDetailPageMenuItem { Id = 0, Title = "Service Records" },
+                    new HomeMasterDetailPageMenuItem { Id = 1, Title = "Reference Documents" },
+                    new HomeMasterDetailPageMenuItem { Id = 2, Title = "Calculations" },                    
                 });
             }
             

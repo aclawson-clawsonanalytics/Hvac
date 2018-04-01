@@ -17,9 +17,9 @@ namespace Hvac.Views
 			InitializeComponent ();
 		}
 
-        async private void LoginClicked(object sender, EventArgs e)
+        private void LoginClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HomeMasterDetailPage());
+            Application.Current.MainPage = new HomeMasterDetailPage();
         }
     }
 }

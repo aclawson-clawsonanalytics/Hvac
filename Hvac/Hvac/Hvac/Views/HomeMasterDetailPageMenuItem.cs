@@ -21,7 +21,7 @@ namespace Hvac.Views
             get
             {
                 if (Title == "Service Records")
-                    return typeof(ServiceRecordMasterDetailPageDetail);
+                    return typeof(ServiceRecordMasterDetailPage);
                 return typeof(HomeMasterDetailPageDetail);
             }
         }

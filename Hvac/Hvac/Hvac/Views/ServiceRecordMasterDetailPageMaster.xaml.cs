@@ -33,11 +33,10 @@ namespace Hvac.Views
             {
                 MenuItems = new ObservableCollection<ServiceRecordMasterDetailPageMenuItem>(new[]
                 {
-                    new ServiceRecordMasterDetailPageMenuItem { Id = 0, Title = "Page 1" },
-                    new ServiceRecordMasterDetailPageMenuItem { Id = 1, Title = "Page 2" },
-                    new ServiceRecordMasterDetailPageMenuItem { Id = 2, Title = "Page 3" },
-                    new ServiceRecordMasterDetailPageMenuItem { Id = 3, Title = "Page 4" },
-                    new ServiceRecordMasterDetailPageMenuItem { Id = 4, Title = "Page 5" },
+                    new ServiceRecordMasterDetailPageMenuItem { Id = 0, Title = "Home" },
+                    new ServiceRecordMasterDetailPageMenuItem { Id = 1, Title = "Service Locations" },
+                    new ServiceRecordMasterDetailPageMenuItem { Id = 2, Title = "Service Records" },
+                    
                 });
             }
             

@@ -24,7 +24,7 @@ namespace Hvac.Views
             if (item == null)
                 return;
 
-            Application.Current.MainPage = new ServiceRecordMasterDetailPage();
+            Application.Current.MainPage = (MasterDetailPage)Activator.CreateInstance(item.TargetType);//new ServiceRecordMasterDetailPage();
             //var page = (Page)Activator.CreateInstance(item.TargetType);
             //page.Title = item.Title;
 

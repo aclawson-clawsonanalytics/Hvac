@@ -11,11 +11,21 @@ namespace Hvac.Views
     {
         public ServiceRecordMasterDetailPageMenuItem()
         {
-            TargetType = typeof(ServiceRecordMasterDetailPageDetail);
+            //TargetType = typeof(ServiceRecordMasterDetailPageDetail);
         }
         public int Id { get; set; }
         public string Title { get; set; }
 
-        public Type TargetType { get; set; }
+        public Type TargetType
+        {
+            get
+            {
+                if (Title == "Service Locations")
+                    return typeof(ServiceLocationsPage);
+                if (Title == "Service Records")
+                    return typeof(ServiceRecordsPage);
+                return null;
+            }
+        }
     }
 }

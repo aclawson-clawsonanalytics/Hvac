@@ -27,7 +27,7 @@ namespace Hvac.Views
 
         public void OnMenuItemSelected(object sender, EventArgs e)
         {
-
+            Application.Current.MainPage = new ServiceRecordMasterDetailPage();
         }
         class HomeMasterDetailPageMasterViewModel : INotifyPropertyChanged
         {

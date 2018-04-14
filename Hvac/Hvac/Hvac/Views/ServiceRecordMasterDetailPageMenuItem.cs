@@ -23,7 +23,7 @@ namespace Hvac.Views
                 if (Title == "Service Locations")
                     return typeof(ServiceLocationsPage);
                 if (Title == "Service Records")
-                    return typeof(ServiceRecordsPage);
+                    return typeof(ServiceRecordsPage);                               
                 return null;
             }
         }

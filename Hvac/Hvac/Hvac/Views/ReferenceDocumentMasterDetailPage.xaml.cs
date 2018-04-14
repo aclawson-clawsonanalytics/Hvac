@@ -24,13 +24,20 @@ namespace Hvac.Views
             if (item == null)
                 return;
 
-            var page = (Page)Activator.CreateInstance(item.TargetType);
-            page.Title = item.Title;
+            if (item.Title == "Home")
+            {
+                Application.Current.MainPage = new HomeMasterDetailPage();
+            }
+            else
+            {
+                var page = (Page)Activator.CreateInstance(item.TargetType);
+                page.Title = item.Title;
 
-            Detail = new NavigationPage(page);
-            IsPresented = false;
+                Detail = new NavigationPage(page);
+                IsPresented = false;
 
-            MasterPage.ListView.SelectedItem = null;
+                MasterPage.ListView.SelectedItem = null;
+            }
         }
     }
 }

@@ -62,6 +62,21 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\NewItemPage.xaml.cs">
       <DependentUpon>NewItemPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPage.xaml.cs">
+      <DependentUpon>ReferenceDocumentMasterDetailPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPageDetail.xaml.cs">
+      <DependentUpon>ReferenceDocumentMasterDetailPageDetail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPageMaster.xaml.cs">
+      <DependentUpon>ReferenceDocumentMasterDetailPageMaster.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPageMenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ServiceLocationsPage.xaml.cs">
       <DependentUpon>ServiceLocationsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -162,6 +177,24 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ServiceRecordsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPageMaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ReferenceDocumentMasterDetailPageDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <!--#if (CreateBackendProject)

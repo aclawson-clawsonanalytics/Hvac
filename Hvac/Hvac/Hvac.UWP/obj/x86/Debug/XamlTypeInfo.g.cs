@@ -8,29 +8,23 @@
 //------------------------------------------------------------------------------
 
 
+
 namespace Hvac.UWP
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlMetaDataProvider __appProvider;
-        private global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlMetaDataProvider _AppProvider
-        {
-            get
-            {
-                if (__appProvider == null)
-                {
-                    __appProvider = new global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlMetaDataProvider();
-                }
-                return __appProvider;
-            }
-        }
+    private global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         /// <summary>
         /// GetXamlType(Type)
         /// </summary>
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
-            return _AppProvider.GetXamlType(type);
+            if(_provider == null)
+            {
+                _provider = new global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlTypeInfoProvider();
+            }
+            return _provider.GetXamlTypeByType(type);
         }
 
         /// <summary>
@@ -38,56 +32,11 @@ namespace Hvac.UWP
         /// </summary>
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(string fullName)
         {
-            return _AppProvider.GetXamlType(fullName);
-        }
-
-        /// <summary>
-        /// GetXmlnsDefinitions()
-        /// </summary>
-        public global::Windows.UI.Xaml.Markup.XmlnsDefinition[] GetXmlnsDefinitions()
-        {
-            return _AppProvider.GetXmlnsDefinitions();
-        }
-    }
-}
-
-namespace Hvac.UWP.Hvac_UWP_XamlTypeInfo
-{
-    /// <summary>
-    /// Main class for providing metadata for the app or library
-    /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
-    {
-        private global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
-
-        private global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlTypeInfoProvider Provider
-        {
-            get
+            if(_provider == null)
             {
-                if (_provider == null)
-                {
-                    _provider = new global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlTypeInfoProvider();
-                }
-                return _provider;
+                _provider = new global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlTypeInfoProvider();
             }
-        }
-
-        /// <summary>
-        /// GetXamlType(Type)
-        /// </summary>
-        public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
-        {
-            return Provider.GetXamlTypeByType(type);
-        }
-
-        /// <summary>
-        /// GetXamlType(String)
-        /// </summary>
-        public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(string fullName)
-        {
-            return Provider.GetXamlTypeByName(fullName);
+            return _provider.GetXamlTypeByName(fullName);
         }
 
         /// <summary>
@@ -98,8 +47,11 @@ namespace Hvac.UWP.Hvac_UWP_XamlTypeInfo
             return new global::Windows.UI.Xaml.Markup.XmlnsDefinition[0];
         }
     }
+}
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
+namespace Hvac.UWP.Hvac_UWP_XamlTypeInfo
+{
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal partial class XamlTypeInfoProvider
     {
@@ -357,7 +309,7 @@ namespace Hvac.UWP.Hvac_UWP_XamlTypeInfo
         }
     }
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlSystemBaseType : global::Windows.UI.Xaml.Markup.IXamlType
     {
@@ -405,7 +357,7 @@ namespace Hvac.UWP.Hvac_UWP_XamlTypeInfo
     internal delegate void AddToDictionary(object instance, object key, object item);
     internal delegate object CreateFromStringMethod(string args);
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlUserType : global::Hvac.UWP.Hvac_UWP_XamlTypeInfo.XamlSystemBaseType
     {
@@ -616,7 +568,7 @@ namespace Hvac.UWP.Hvac_UWP_XamlTypeInfo
     internal delegate object Getter(object instance);
     internal delegate void Setter(object instance, object value);
 
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {

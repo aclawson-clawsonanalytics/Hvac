@@ -684,7 +684,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\andrewclawson\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
@@ -693,7 +693,7 @@
       "projectUniqueName": "C:\\Projects\\Hvac\\Hvac\\Hvac\\Hvac.Android\\Hvac.Android.csproj",
       "projectName": "Hvac.Android",
       "projectPath": "C:\\Projects\\Hvac\\Hvac\\Hvac\\Hvac.Android\\Hvac.Android.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\andrewclawson\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\Hvac\\Hvac\\Hvac\\Hvac.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
@@ -701,7 +701,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andrewclawson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

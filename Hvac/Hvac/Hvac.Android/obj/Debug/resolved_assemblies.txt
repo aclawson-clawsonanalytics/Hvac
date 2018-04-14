@@ -39,6 +39,7 @@ C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Linq.dll
 C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
+C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Reflection.Primitives.dll
 C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Net.Http.dll
 C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Projects\Hvac\Hvac\Hvac\Hvac.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll

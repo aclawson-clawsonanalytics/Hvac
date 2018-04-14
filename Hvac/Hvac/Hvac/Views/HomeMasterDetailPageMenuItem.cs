@@ -24,7 +24,8 @@ namespace Hvac.Views
                     return typeof(ServiceRecordMasterDetailPage);
                 if (Title == "Reference Documents")
                     return typeof(ReferenceDocumentMasterDetailPage);
-
+                if (Title == "Calculations")
+                    return typeof(CalculationsMasterDetailPage);
                 return typeof(HomeMasterDetailPageDetail);
             }
         }
